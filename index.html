@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Personal Portfolio Website using HTML and CSS | Codehal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="Home_style.css">
+</head>
+<script>
+    // Wait for the page to load
+    document.addEventListener('DOMContentLoaded', () => {
+        const backToTopButton = document.querySelector('.top');
+
+        // Show the button when scrolling down
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) { // Adjust this value as needed
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+    });
+</script>
+
+<body>
+    <header id="uptop">
+        <h2 class="logo"><span>A</span>ryan.</h2>
+        <nav class="navigation">
+            <a href="#about-me">About Me</a>
+            <a href="#experience">Experiences</a>
+            <a href="#projects">Projects</a>
+            <a href="#leadership">Leadership Experience</a>
+            <a href="#certifications">Certifications</a>
+        </nav>
+        <a href="https://forms.gle/7JfSHTcpa7e9fitc7" target="_blank" class="btn-talk">Let's Talk</a>
+    </header>
+    
+    <section id="home" class="home">
+        <div class="content">
+            <h2>Hi, I'm <span>Aryan Patel</span></h2>
+            <h4>I am looking for work!</h4>
+            <p>I am a recent graduate from the University of Minnesota. I graduated with a Bachelors in Computer Science.
+                I have interned with Shure as a DevOps Cloud Intern and interned at Molson Coors as an IT Intern.
+                If you'd like to learn more about me, feel free to explore my site or contact me!
+            </p>
+            <div class="btn-group">
+                <a href="#experience">See Experiences</a>
+                <a href="arynp155.github.io/Personal-Portfolio/Aryan_website_resume.pdf" target="_blank">Download Resume</a>
+            </div>
+            <div id="linkedin" class="social-icons">
+                <a href="https://linkedin.com/in/aryan-patel-8657ab232/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+        <div class="profile-image">
+            <img src="prof_img.png" alt="Aryan Patel">
+        </div>
+    </section>
+    
+    <section id="about-me" class="about-me">
+        <h2>About Me</h2>
+        <p>
+            Hi, I'm Aryan Patel, a Computer Science student at the University of Minnesota Twin Cities, graduating in December 2024 with a GPA of 3.58. I have a strong background in software engineering, cloud computing, and DevOps, gained through internships and projects.
+        </p>
+        <p>
+            My skills include programming languages like Java, JavaScript, Python, and frameworks such as AWS, React, and Docker. I'm passionate about designing scalable systems and building efficient pipelines.
+        </p>
+        <p>
+            Explore my experience further below or connect with me via LinkedIn or GitHub!
+        </p>
+    </section>
+    
+    <section id="experience" class="experience">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <div class="experience-text">
+                <h3>DevOps Cloud Software Engineer Intern/Co-op</h3>
+                <h4>Shure | May 2024 - Dec 2024</h4>
+                <p>
+                    - Designed PromQL queries to enhance monitoring capabilities.<br>
+                    - Automated Jenkins Pipeline/Job launch processes, reducing manual effort.<br>
+                    - Constructed AWS CloudFormation templates for rapid scaling of infrastructure.<br>
+                    - Created Docker containers to improve workflow efficiency.
+                </p>
+            </div>
+            <div class="experience-logo">
+                <img src="shure_img.png" alt="Shure Logo">
+            </div>
+        </div>
+        <div class="experience-item">
+            <div class="experience-text">
+                <h3>Data Structures and Algorithms Teaching Assistant</h3>
+                <h4>University of Minnesota Twin Cities | Sept 2023 - May 2024</h4>
+                <p>
+                    - Reinforced lecture concepts during labs, covering Data Structures and Algorithms.<br>
+                    - Reduced grading time by 60+ hours weekly using JUnit tests.
+                </p>
+            </div>
+            <div class="experience-logo">
+                <img src="minnesota_img.webp" alt="UMN Logo">
+            </div>
+        </div>
+        <div class="experience-item">
+            <div class="experience-text">
+                <h3>IT Intern</h3>
+                <h4>Molson Coors | May 2023 - Aug 2023</h4>
+                <p>
+                    - Developed a Python/React app for interactive brewing data visualization.<br>
+                    - Migrated a manufacturing website to SharePoint using embedded HTML and CSS.
+                </p>
+            </div>
+            <div class="experience-logo">
+                <img src="molson_img.png" alt="Molson Coors Logo">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="experience">
+        <h2>Projects</h2>
+        <div class="experience-item">
+            <div class="experience-text">
+                <h3>Personal Portfolio Site</h3>
+                <h4>Personal Project</h4>
+                <p>
+                    - Designed and developed a responsive personal portfolio website using HTML and CSS.<br>
+                    - Integrated modern design principles to create a user-friendly interface with sections for experiences, projects, and personal details.<br>
+                </p>
+            </div>
+            <div class="experience-logo">
+                <img src="portfolio_name.png" alt="Project Logo">
+            </div>
+        </div>
+        <div class="experience-item">
+            <div class="experience-text">
+                <h3>Scraping Data</h3>
+                <h4>Work Project at Molson Coors</h4>
+                <p>
+                    - Wrote a Python script that recursively scrapes data from 595 daily operations files in 20 seconds.<br>
+                    - Implemented a dictionary in Python to store information for easy accessibility via React app and SQL.<br>
+                    - Engineered a Python script to populate a SQL server table, reducing update time by 2 minutes.<br>
+                    - Wrote a script to automatically populate SQL Database with 100+ new rows of data.
+                </p>
+            </div>
+            <div class="experience-logo">
+                <img src="minnesota_img.webp" alt="Project Logo">
+            </div>
+        </div>
+        <div class="experience-item">
+            <div class="experience-text">
+                <h3>Better Days</h3>
+                <h4>Group Project - Team Lead</h4>
+                <p>
+                    - Created an application that summarizes and organizes a university’s mental health resources.<br>
+                    - Used Flutter to create a simple User Interface students can use during mental health emergencies.<br>
+                    - Managed a five-person team, fostering productivity through team bonding activities.
+                </p>
+            </div>
+            <div class="experience-logo">
+                <img src="minnesota_img.webp" alt="Project Logo">
+            </div>
+        </div>
+    </section>
+    <section id="leadership" class="experience">
+        <h2>Leadership Experience</h2>
+        <div class="experience-item">
+            <div class="experience-text">
+                <h3>Project Director</h3>
+                <h4>United Student Education | September 2021 - May 2023</h4>
+                <p>
+                    - Created software for apps to further student education whether it is spreading awareness about mental health.<br>
+                    - Lead a group of 6 students to develop an app that helps students find mental health resources.<br>
+                    - Delegated tasks to team members and creates schedules for each individual to ensure project milestones are met.<br>
+                </p>
+            </div>
+            <div class="experience-logo">
+                <img src="minnesota_img.webp" alt="Shure Logo">
+            </div>
+        </div>
+        <div class="experience-item">
+            <div class="experience-text">
+                <h3>External Vice President</h3>
+                <h4>Beta Chi Theta – Multi Cultural Organization | May 2022 - May 2023</h4>
+                <p>
+                    - Coordinated with various organizations, such has Bharat and United Student Education, to host events for 200+ individual.<br>
+                    - Coordinated a resume workshop with participation of employees from Meta, Cigna, and Abbott to assist undergraduate students before the campus career fair.
+                </p>
+            </div>
+            <div class="experience-logo">
+                <img src="minnesota_img.webp" alt="UMN Logo">
+            </div>
+        </div>
+    </section>
+    <section id="certifications" class="experience">
+        <h2>Certifications</h2>
+        <div class="experience-item">
+            <div class="experience-text">
+                <h3>JPMorgan Chase Software Engineering Forage Online Certification</h3>
+                <h4>June 2023 - July 2023 </h4>
+                <p>
+                    - Used React to display data visually through graphs for traders to see trends in the market.
+                </p>
+            </div>
+            <div class="experience-logo">
+                <img src="jpmc_logo.png" alt="Shure Logo">
+            </div>
+        </div>
+    </section>
+    <a class="top" href="#uptop">Back To Top</a>
+</body>
+</html>
