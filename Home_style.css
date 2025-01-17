@@ -401,7 +401,7 @@ header a{
     .home{
         flex-direction: column-reverse;
         padding: 50px 10px;
-        /* height: 160vh; */
+        height: 0vh;
     }
 
     .logo {
