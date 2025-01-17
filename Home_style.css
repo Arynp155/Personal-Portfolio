@@ -72,7 +72,7 @@ header a{
 .home {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 40em;
     /* background: url('background.jpg'); */
     background: white;
     background-size: cover;
@@ -302,7 +302,7 @@ header a{
     .home{
         flex-direction: column-reverse;
         padding: 50px 10px;
-        height: 160vh;
+        height: 50em;
     }
 
     .content{
@@ -401,7 +401,7 @@ header a{
     .home{
         flex-direction: column-reverse;
         padding: 50px 10px;
-        height: 0vh;
+        height: 50em;
     }
 
     .logo {
