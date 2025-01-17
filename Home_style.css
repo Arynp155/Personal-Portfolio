@@ -285,11 +285,11 @@ header a{
     }
 
     header {
+        padding: 0px;
         display: flex;
-        padding: 10%;
-        flex-direction: row;
         position: fixed;
-
+        flex-direction: row;
+        align-items: center;
     }
 
     .about-me{
@@ -302,7 +302,7 @@ header a{
     .home{
         flex-direction: column-reverse;
         padding: 50px 10px;
-        height: 170vh;
+        height: 160vh;
 
     }
 
