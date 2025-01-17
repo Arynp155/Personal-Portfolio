@@ -302,8 +302,7 @@ header a{
     .home{
         flex-direction: column-reverse;
         padding: 50px 10px;
-        /* height: 160vh; */
-
+        height: 160vh;
     }
 
     .content{
@@ -391,6 +390,20 @@ header a{
 }
 
 @media (max-width: 480px) {
+    header {
+        padding: 0px;
+        display: flex;
+        position: fixed;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .home{
+        flex-direction: column-reverse;
+        padding: 50px 10px;
+        height: 160vh;
+    }
+
     .logo {
         /* text-align: center; */
         padding-left: 30%;
