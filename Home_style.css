@@ -290,6 +290,7 @@ header a{
         position: fixed;
         flex-direction: row;
         align-items: center;
+        height: 80px;
     }
 
     .about-me{
@@ -396,6 +397,7 @@ header a{
         position: fixed;
         flex-direction: row;
         align-items: center;
+        height: 80px;
     }
 
     .home{
